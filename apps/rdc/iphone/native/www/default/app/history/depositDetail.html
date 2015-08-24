@@ -1,0 +1,21 @@
+<ion-view view-title="{{vm.title}}">
+  <ion-content scroll="false">
+    <!-- View Banner -->
+    <div>
+      <h4>Account: {{vm.account}}</h4>
+      <h4>Deposit Amount: {{vm.depositAmount}}</h4>
+    </div>
+    <!-- Deposit Checks List -->
+    <ion-scroll>
+      <ion-list>
+        <ion-item class="item item-thumbnail-right" data-ng-repeat="check in vm.checks" data-ng-click="vm.showImages($index)">
+          <img class="check-thumbnail" data-ng-src="{{vm.checks[$index].imgDataFront}}" />
+          <h2>{{check.id}}</h2>
+          <h4>{{check.number}}</h4>
+          <h4>{{check.amount}}</h4>
+          <h4>{{check.ts}}</h4>
+        </ion-item>
+      </ion-list>
+    </ion-scroll>
+  </ion-content>
+</ion-view>

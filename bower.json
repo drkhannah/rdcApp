@@ -1,0 +1,12 @@
+{
+  "name": "rdc",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.1",
+    "ng-currency": "~0.8.7"
+  },
+  "dependencies": {
+    "angular-ui-router": "~0.2.15",
+    "angular-messages": "~1.4.3"
+  }
+}

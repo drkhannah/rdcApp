@@ -1,0 +1,71 @@
+<!DOCTYPE html><html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" name="viewport">
+        <title></title>
+    <!-- compiled css output -->
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="css/ionic.app.css" rel="stylesheet">
+    <!-- ionic/angularjs js -->
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		 WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "rdc",
+   "APP_ID": "rdc",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "iphone",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "3304563914",
+   "WORKLIGHT_PLATFORM_VERSION": "7.0.0.0",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/rdc\/iphone\/"
+};
+</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- bower stuff -->
+    <script src="lib/ng-currency/dist/ng-currency.min.js"></script>
+    <script src="lib/angular-messages/angular-messages.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) 
+    <script src="cordova.js"></script>
+	-->
+    <!-- core -->
+    <script src="app/core/core.module.js"></script>
+    <!-- your app's js -->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.js"></script>
+    <!-- core -->
+    <script src="app/core/core.module.js"></script>
+    <!-- layout -->
+    <script src="app/layout/layout.module.js"></script>
+    <script src="app/layout/layout.js"></script>
+    <!-- deposit -->
+    <script src="app/deposit/deposit.module.js"></script>
+    <script src="app/deposit/deposit.js"></script>
+    <script src="app/deposit/captureCheck.js"></script>
+    <script src="app/deposit/depositReview.js"></script>
+    <script src="app/deposit/depositCompleted.js"></script>
+    <!-- history -->
+    <script src="app/history/history.module.js"></script>
+    <script src="app/history/depositDetail.js"></script>
+    <script src="app/history/history.js"></script>
+    <!-- services -->
+    <script src="app/core/historyService.js"></script>
+    <script src="app/core/depositService.js"></script>
+    <script src="app/core/signinService.js"></script>
+	<!--  mfp JS -->
+    <script src="js/initOptions.js"></script>
+    <script src="js/main.js"></script>
+    </head>
+    <body>
+        <ion-nav-view></ion-nav-view>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <!-- Signin Button -->
+        <button ng-click="vm.signin()" class="button button-clear button-positive pull-right">
+            Signin
+        </button>
+    </ion-header-bar>
+    <ion-content>
+            <div class="list">
+                <!-- User Name -->
+                <label class="item item-input">
+                    <span class="input-label">Username:</span>
+                    <input name="username" type="text" data-ng-model="vm.username" required data-ng-change="vm.usernameChange()">
+                </label>
+                <!-- Password -->
+                <label class="item item-input">
+                    <span class="input-label">Password:</span>
+                    <input name="password" type="password" data-ng-model="vm.password" required data-ng-change="vm.passwordChange()">
+                </label>
+            </div>
+    </ion-content>
+</ion-modal-view>

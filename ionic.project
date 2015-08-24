@@ -1,0 +1,12 @@
+{
+  "name": "rdc",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "apps/rdc/common/**/*",
+    "!apps/rdc/common/lib/**/*"
+  ]
+}

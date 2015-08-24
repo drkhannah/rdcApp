@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="rdcApp">
+        <wb-resource deploy-path="/" source-path="/apps/rdc/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/rdc/ipad"/>
+        <wb-resource deploy-path="/" source-path="/apps/rdc/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/rdc/iphone"/>
+        <property name="context-root" value="rdcApp"/>
+    </wb-module>
+</project-modules>
